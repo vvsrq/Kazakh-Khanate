@@ -1,0 +1,164 @@
+/* Подключение шрифта */
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('/Kazakh-Khanate/src/fonts/CormorantGaramond-Regular.ttf') format('truetype');
+}
+
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Общий стиль для страницы */
+body {
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    font-family: 'MyCustomFont', serif;
+}
+
+.header .logo {
+    font-size: 1.5em;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.nav-menu a {
+    font-size: 1.25em;
+    margin: 0 15px;
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Khans Cards Section */
+.khans-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 100px; /* Отступ для хедера */
+}
+
+.khan-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s; /* Легкая анимация при наведении */
+}
+
+.khan-card:hover {
+    transform: scale(1.05); /* Увеличение карточки при наведении */
+}
+
+.khan-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.khan-card h2 {
+    font-size: 22px;
+    color: #8a6d3b;
+    margin: 15px 0 10px;
+}
+
+.khan-card p {
+    font-size: 17px;
+    color: #555;
+}
+
+.khan-info {
+    display: none;
+    font-size: 50px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.toggle-info {
+    background-color: #8a6d3b;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.toggle-info:hover {
+    background-color: #7a5a30;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+footer .social-links a {
+    color: #ffd700;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Modal styles */
+.modal {
+    display: none;  /* Hidden by default */
+    position: fixed;  /* Stay in place */
+    z-index: 1;  /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;  /* Full width */
+    height: 100%;  /* Full height */
+    overflow: auto;  /* Enable scrolling if needed */
+    background-color: rgba(0, 0, 0, 0.4);  /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;  /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

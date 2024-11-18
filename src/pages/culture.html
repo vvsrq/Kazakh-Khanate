@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Казахское ханство</title>
+    <link rel="stylesheet" href="/Kazakh-Khanate/src/styles/culture.css">
+    <style>
+        body{
+            background-color: rgb(42, 42, 42);
+            margin: 0;
+            padding: 0;
+            
+        }
+        .sidebar-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            position: fixed;
+            bottom: -100%; /* Hidden off the screen */
+            width: 100%; /* Adjust width */
+            height: 80%; /* Adjust height */
+            background-color: #333;
+            color: white;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            overflow-y: auto; /* Enable vertical scrolling */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            transition: bottom 0.3s ease-in-out;
+        }
+
+        /* Styling for content inside the sidebar */
+        .sidebar h2 {
+            margin-top: 0;
+        }
+
+        .sidebar p {
+            line-height: 1.5;
+        }
+
+        .sidebar ul {
+            padding-left: 20px;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        /* Sidebar buttons */
+        .sidebar-button {
+            position: relative;
+            top: 100px;
+            width: 150px;
+            background-color: #ffca28;
+            color: #00274d;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            
+        }
+
+        .sidebar-button:hover {
+            background-color: #b30000;
+        }
+
+    
+
+        /* Sidebar active state */
+        .sidebar.active {
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="logo">Kazakh Khanate</div>
+        <nav class="nav-menu">
+            <a href="/Kazakh-Khanate/index.html">Home</a>
+            <a href="./history.html">History</a>
+            <a href="./khans.html">Khans</a>
+            <a href="./culture.html">Culture</a>
+            <a href="./quiz.html">Quiz</a>
+        </nav>
+    </header>
+    
+
+    <div id="sidebar1" class="sidebar">
+        <h2>Traditions</h2>
+        <p>Welcome to the Traditions of Kazakh's culture! Here is some our traditions:</p>
+        <div class="study-conspect-outer">
+            <div class="content-text">
+                <h1>Kazakh Traditions</h1>
+                
+                <h2>1. Hospitality (Қонақжайлық)</h2>
+                <p>Kazakh hospitality is legendary. Guests are treated with the utmost respect, and it is considered a great honor to host visitors. Traditionally, when a guest arrives at a Kazakh home, they are offered tea and food, often accompanied by bread, jam, or a variety of dairy products like kumys (fermented mare’s milk) and shubat (fermented camel milk). The guest is typically greeted with a warm "Qonaq bolyp kelgenin'izge rahmet!" (Thank you for coming as a guest!). Kazakhs also have a tradition of providing a comfortable and welcoming environment for guests, regardless of their social status.</p>
+    
+                <h2>2. Wedding Traditions (Той)</h2>
+                <p>Kazakh weddings are grand celebrations, often lasting for several days. They involve a series of rituals and customs:</p>
+                <ul>
+                    <li><strong>Kyz Uzatu (Bride’s Departure):</strong> This marks the beginning of the wedding. The bride is escorted from her family home to her new husband's house in a ceremony full of symbolic gestures.</li>
+                    <li><strong>Körsetu (Introduction to the Groom's Family):</strong> After the bride’s arrival, the groom's family welcomes her, and the groom’s mother gifts her with special items.</li>
+                    <li><strong>Aşken Qaiyby (Bride Price):</strong> Traditionally, the groom’s family pays a dowry or bride price, which symbolizes the value placed on the bride and her family.</li>
+                    <li><strong>Beshik Toi (Cradle Ceremony):</strong> This is a celebration held when a newborn child is introduced to the family, where relatives sing traditional songs and celebrate the new life.</li>
+                </ul>
+    
+                <h2>3. Kazakh Cuisine (Қазақтың ас үйі)</h2>
+                <p>Kazakh cuisine is heavily influenced by their nomadic way of life. The food is often based on meat, dairy products, and grains, which are easy to store and transport. Some traditional dishes include:</p>
+                <ul>
+                    <li><strong>Beshbarmak (Бешбармақ):</strong> A dish made of boiled meat, usually lamb or beef, served over pasta and garnished with onions.</li>
+                    <li><strong>Kazy (Қазы):</strong> A traditional sausage made from horse meat, often served during celebrations.</li>
+                    <li><strong>Manti (Мантылар):</strong> Steamed dumplings filled with minced meat and onions, served with a yogurt-based sauce.</li>
+                    <li><strong>Kymyz (Қымыз):</strong> Fermented mare’s milk, known for its tangy flavor and health benefits.</li>
+                    <li><strong>Shubat (Шұбат):</strong> Fermented camel milk, a staple in the Kazakh diet, especially in the desert regions.</li>
+                </ul>
+    
+                <h2>4. Traditional Clothing (Ұлттық киімдер)</h2>
+                <p>Traditional Kazakh clothing is designed to protect against the harsh climate of the steppe. The clothing is made of animal skins, wool, and other natural materials.</p>
+                <ul>
+                    <li><strong>Shapan (Шапан):</strong> A long, loose robe often worn over the traditional attire, adorned with embroidery.</li>
+                    <li><strong>Kimeshek (Кімешек):</strong> A headscarf worn by women, especially married women, as a sign of modesty.</li>
+                    <li><strong>Saukele (Сәукеле):</strong> A ceremonial headdress worn by the bride during her wedding, symbolizing her transition into womanhood.</li>
+                </ul>
+    
+                <h2>5. Traditional Music and Dance (Музыка және би)</h2>
+                <p>Kazakh music is deeply intertwined with their traditions, reflecting the nomadic lifestyle, the vastness of the steppe, and their spiritual connection to nature. The <strong>dombra</strong>, a two-stringed instrument, is a central part of Kazakh music. Traditional dances, often accompanied by songs about love, nature, and heroism, are performed at celebrations such as weddings and festivals.</p>
+    
+                <h2>6. Nomadic Culture (Көшпенділік мәдениет)</h2>
+                <p>The Kazakh people have a rich history of nomadism. Their traditional lifestyle revolved around herding livestock such as horses, cattle, and sheep. This lifestyle influenced many aspects of their culture, including architecture, clothing, and social structure. Traditional Kazakh homes, known as <strong>yurts (киіз үй)</strong>, are portable, round tents made from felt, which can easily be disassembled and carried from place to place.</p>
+    
+                <h2>7. Proverbs and Sayings (Мақал-мәтелдер)</h2>
+                <p>Kazakh proverbs and sayings (maqal-matels) are an important part of their oral tradition, often offering wisdom passed down through generations. They reflect Kazakh values such as respect for elders, honesty, and the importance of family. Some popular proverbs include:</p>
+                <ul>
+                    <li>"Үлкенге – құрмет, кішіге – ізет" (Respect for elders, kindness to youth).</li>
+                    <li>"Еңбек ер атандырады" (Labor makes a hero).</li>
+                </ul>
+    
+                <h2>8. Religion and Spirituality (Дін және руханилық)</h2>
+                <p>Kazakh spirituality traditionally centers on <strong>Tengrism</strong>, an ancient religion based on the worship of nature and the belief in a supreme deity, Tengri. Over time, Islam, particularly Sunni Islam, became the dominant religion, although elements of Tengrism can still be found in Kazakh spiritual practices, such as reverence for nature and the spirits of ancestors. The <strong>Nauryz</strong> festival, which marks the spring equinox, is one of the most important celebrations in Kazakhstan and reflects both the traditions of the nomadic past and Islamic practices.</p>
+    
+                <h2>9. Festivals and Holidays (Мерекелер)</h2>
+                <ul>
+                    <li><strong>Nauryz (Наурыз):</strong> A major holiday celebrated on March 21st, marking the arrival of spring. Nauryz is a time for family gatherings, feasts, and outdoor activities. It symbolizes renewal, growth, and the beginning of a new year.</li>
+                    <li><strong>Qurban Ait (Құрбан айт):</strong> An Islamic holiday where Muslims sacrifice an animal, usually a sheep, and share the meat with the less fortunate. It is a time for charity, family gatherings, and prayers.</li>
+                    <li><strong>Republic Day (ҚР Тәуелсіздік күні):</strong> December 16th marks Kazakhstan’s independence from the Soviet Union, celebrated with national pride.</li>
+                </ul>
+    
+                <h2>10. Death and Mourning Traditions (Өлім және аза)</h2>
+                <p>The Kazakh people observe mourning customs that reflect their respect for the deceased. When a person passes away, the family holds a <strong>"zharatu"</strong> (funeral) ceremony, and a memorial service is often held on the 40th and 100th days after the death. The Kazakh mourning tradition emphasizes respect for the soul of the departed, and relatives may refrain from joyous celebrations during this period.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar 2 -->
+    <div id="sidebar2" class="sidebar">
+        <h2>Literature and art</h2>
+        <p>Here is a breifly content about literature and art of Kazakh's history. Scroll to see more:</p>
+        <section class="study-conspect-outer">
+            <div class="study-conspect-inner">
+                <div class="content-text">
+                    <h1>Literature and Art</h1>
+                    <h2>Kazakh Soviet Literature</h2>
+                    <h3>Development of Literature</h3>
+                    <p><strong>Saken Seifullin</strong>, a poet, writer, and statesman, founded the <strong>Kazakh Writers’ Union in 1934</strong>. His poem <em>“The Marseillaise of Kazakh Youth”</em> was widely popular among Kazakh youth.</p>
+                    <p>In 1913, <strong>Magzhan Zhumabayev</strong> published a collection of poems that diversified Kazakh poetry. His poem <em>“Freedom”</em> celebrated the proletarian revolution.</p>
+                    <ul>
+                        <li><em>“Kokshetau”</em> by Saken Seifullin</li>
+                        <li><em>“Kartkozha”</em> by Zhusipbek Aimautov</li>
+                        <li><em>“Kulager”</em> by Ilyas Zhansugurov</li>
+                    </ul>
+                    <p><strong>Sabyrzhan Mukhanov</strong> authored novels such as <em>“Botagoz”</em> and <em>“Sulu Shash”</em>. The poetry of <strong>Sultanmakhmut Toraygyrov</strong> also left a lasting legacy.</p>
+    
+                    <h3>Historical and Revolutionary Themes</h3>
+                    <p>Saken Seifullin’s <em>“The Thorny Path, Dangerous Crossing”</em> (1927) depicted the struggles of Kazakhs during the 1916 national liberation movement and subsequent revolutions.</p>
+    
+                    <h3>Kazakh Drama</h3>
+                    <ul>
+                        <li><em>“Aiman-Sholpan”</em> by Mukhtar Auezov</li>
+                        <li><em>“Zhalbyr”</em> by Beimbet Mailin</li>
+                        <li><em>“Kyz-Zhibek”</em> by Gabit Musrepov</li>
+                    </ul>
+    
+                    <h2>Kazakh Soviet Art</h2>
+                    <h3>Folk and Musical Culture</h3>
+                    <p>In 1922, a contest of folk singers was held in Karkaralinsk, and the Petropavl Pedagogical College choir performed in Moscow. <strong>Alexander Zatayevich</strong> documented Kazakh folk songs, publishing anthologies such as <em>“1,000 Songs of the Kazakh People”</em>.</p>
+    
+                    <h3>National Theater and Performances</h3>
+                    <p>In 1926, the first National Kazakh Theater opened in Kyzylorda under <strong>Zhumat Shanin</strong>. Notable performances included <em>“Enlik-Kebek”</em> by Mukhtar Auezov.</p>
+    
+                    <h3>Cinema and Film</h3>
+                    <p>In the 1930s, the Almaty branch of <em>Vostokkino</em> produced documentaries and silent films. The first Kazakh sound film <em>“Amangeldy”</em> premiered in 1938.</p>
+    
+                    <h3>Music and Opera</h3>
+                    <p>The Kazakh State Musical Theater premiered with the opera <em>“Aiman-Sholpan”</em>. The <em>Kurman-gazy Orchestra</em> was established in 1934 under <strong>Akhmet Zhubanov</strong>.</p>
+    
+                    <h3>Painting and Visual Arts</h3>
+                    <p><strong>Pavel Khlyudov</strong>'s workshop nurtured Kazakh professional painting. <strong>Abilkhan Kasteev</strong>, his student, became Kazakhstan's first professional artist.</p>
+    
+                    <h2>Libraries and Cultural Development</h2>
+                    <p>From 1930 to 1939, the number of libraries in Kazakhstan grew from 290 to 3,304. Notable establishments included the <strong>Pushkin State Public Library</strong> (1939).</p>
+                    <hr>
+                    <h3><strong>Painting</strong></h3>
+                    <p>A significant contribution to the portrayal of the life and customs of the Kazakh people was made by Russian artists of the progressive movement. Artists who were part of various expeditions in Kazakhstan, such as B. Smirnov, O. Fedorchenko, and P. Kosharov, reflected the lives of the people in their works. The theme of Kazakhstan and Central Asia was especially significant in the works of the famous Russian artist V. Vereshchagin. In his painting "The Surrounding Mountains of Lepsinsk," he skillfully conveys the beauty of the Kazakh land. The artist N. Khlyudov dedicated all his works to Kazakh themes, preserving more than 100 of his paintings, watercolors, and sketches. With great love, he depicted the Kazakh Steppe in his paintings "Herding Livestock" and "For Firewood."</p>
+                    <p>Applied arts in Kazakhstan have a centuries-old history. Products of folk artisans were showcased in major exhibitions in the 19th century in Petropavlovsk and Kokshetau (1876). Magnificent syrymak carpets, Tuskiz wall carpets, and other items were displayed. The decoration of these products used three styles of Kazakh ornamentation: geometric, plant-based, and zoomorphic. Silver and bone inlays were common in the saddles and horse equipment. Embroidery was widely used in the production of men's and women's clothing. In rural areas, wooden products made by Kazakh artisans (kebezhe, tosek agash, and sunduk) successfully competed with factory-made ones. Metal products also gained popularity, with jewelers creating exquisite jewelry. Kazakh jewelry and national costumes were exhibited at the 1868 World Exhibition in Paris, and Russian society got acquainted with Kazakh musical instruments at the 1872 exhibition in Moscow.</p>
+                    <hr>
+                    <h3><strong>Musical Art</strong></h3>
+                    <p>The main motif of Kazakh classical music in the second half of the 19th century was the people's struggle for freedom against oppressors. These works reflect national character traits such as kindness, generosity, heroism, and broadness of soul.</p>
+                    <ul><li><p><strong>Tattimbet Kazigauly (1815–1862)</strong> – an outstanding composer, one of the founders of Kazakh classical dombra music in the 19th century, and an unparalleled author and performer of "shertpe" style kuy. His works like "Boz Aygyr," "Boztorgay," and "Alshagyr" are classics of Kazakh instrumental music.</p></li><li><p><strong>Kurmangazy Sagyrbaiuly (1818–1889)</strong> – a genius composer and kuyshi, a classic of Kazakh instrumental music. His works, including the famous "Saryarka," convey the unyielding will of the Kazakh people to protect their homeland. He composed more than 60 kuy, including dance kuy such as "Balbyrauyn."</p></li><li><p><strong>Daulenkerey Shygaiuly (1820–1887)</strong> – a famous composer and kuyshi, the founder of the lyrical direction in dombra music. His kuy "Kos Alqa," "Kyz Akzhelen," and "Akbala Kyz" are psychological portraits of women, while works like "Vashchenko" and "Topan" reflect deep emotional experiences.</p></li><li><p><strong>Birjan Sal Kozhaguly (1834–1897)</strong> – a prominent Kazakh composer, singer, and poet. He wrote over 40 songs, including classics like "Birjan Sal" and "Aytsbay," which reflect his protests against the actions of the ruling powers.</p></li><li><p><strong>Zhayau Musa Bayjanuly (1835-1929)</strong> – a notable folk composer and poet. His song "Aksisa" ("White Calico") and others reflect the revolutionary views of the time, and he became a prominent figure in the Kazakh Steppe.</p></li><li><p><strong>Akan-Seri Koramsauly (1843–1913)</strong> – a distinguished folk composer. Akan-seri was born by Lake Ulken Kosskol in the Kokshetau region and composed numerous songs such as "Balkadisha," "Manmanger," and "Kulagier." His songs reflect ideals of justice and denounce betrayal and cruelty.</p></li><li><p><strong>Ikhlas Dukenuly (1843–1916)</strong> – a composer and kobyzist. He revived the rich musical tradition of the kobyz, with works like "Zhez Kiik" and "Kambar" inspired by Kazakh legends and epic stories.</p></li><li><p><strong>Sarmalay (1835–1885)</strong> – a famous Kazakh composer and siybizgyst of the 19th century. His works, such as the kuy "Kara Jorga," reflect the themes of Kazakh epic tales, legends, and folklore.</p></li></ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Sidebar 3 -->
+    <div id="sidebar3" class="sidebar">
+        <h2>Clothing</h2>
+        <p>This sidebar has a long information about traditional clothing and jewelry:</p>
+        <div class="study-conspect-outer">
+            <div class="content-text">
+                <h1>Kazakh Traditional Clothing</h1>
+    
+                <h2>1. Shapan (Шапан)</h2>
+                <p>The <strong>shapan</strong> is a long, loose robe worn by both men and women. Made of luxurious fabrics such as velvet, brocade, or silk, it is often decorated with intricate embroidery. The shapan is a symbol of honor, typically worn during important ceremonies, celebrations, or when receiving guests. It may feature a fur collar or trim for warmth, especially in colder regions.</p>
+    
+                <h2>2. Kimeshek (Кімешек)</h2>
+                <p>The <strong>kimeshek</strong> is a traditional headscarf worn by married Kazakh women. It covers the head and is tied securely under the chin. The headscarf is often decorated with embroidery or beadwork, symbolizing modesty and respect within the community.</p>
+    
+                <h2>3. Saukele (Сәукеле)</h2>
+                <p>The <strong>saukele</strong> is a ceremonial headdress worn by brides on their wedding day. It is typically tall, cone-shaped, and made from luxurious materials such as velvet or silk, adorned with gold, silver, and precious stones. The saukele symbolizes the bride’s transition into adulthood and her new life with her husband.</p>
+    
+                <h2>4. Chapan (Чапан)</h2>
+                <p>The <strong>chapan</strong> is another type of long robe, similar to the shapan but generally made from coarser materials. It is worn by both men and women for everyday activities or simpler ceremonies. It often features embroidery along the edges and is tied with a belt at the waist.</p>
+    
+                <h2>5. Pants and Tunics</h2>
+                <p>Under the shapan or chapan, Kazakh men traditionally wear loose-fitting pants, known as <strong>shalbar</strong>. These pants are practical for riding horses and performing tasks in the nomadic lifestyle. Women may wear long skirts or tunics with intricate decorations.</p>
+    
+                <h2>6. Boots (Ботинки)</h2>
+                <p>Traditional Kazakh boots, often made from leather or felt, are essential for protection against the harsh steppe climate. These boots, worn by both men and women, are typically high-heeled and pointed, suitable for long hours spent riding horses.</p>
+    
+                <h2>7. Jewelry and Accessories</h2>
+                <p>Kazakh people wear a variety of jewelry, especially during significant occasions. This includes necklaces, bracelets, earrings, and headpieces, often made from silver or gold and decorated with colorful stones. The jewelry is a symbol of wealth and social status, as well as having spiritual significance for protection and good fortune.</p>
+    
+                <h2>8. Winter Clothing</h2>
+                <p>Given the extreme cold, traditional Kazakh winter clothing includes <strong>sheepskin</strong> and <strong>fur</strong> coats, known as <strong>malmatka</strong>. These garments are durable, warm, and essential for survival in the harsh winter months.</p>
+    
+                <h2>9. Embroidery and Decorative Patterns</h2>
+                <p>Embroidery plays a key role in Kazakh clothing. Each region has distinct styles, often reflecting nature through animal, plant, or geometric patterns. These embroidered designs carry symbolic meanings and are passed down through generations, showcasing traditional craftsmanship.</p>
+    
+                <h2>10. Yurt Clothing</h2>
+                <p>Beyond personal attire, traditional Kazakh clothing extends to the decorations within the <strong>yurt</strong> (a portable tent). Textiles such as rugs, blankets, and embroidered pieces match the clothing style, adding continuity between the people and their environment.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Buttons -->
+<div class="btn-side-bars">
+    <button class="sidebar-button button-1" onclick="toggleSidebar(1)">Traditions</button>
+    <button class="sidebar-button button-2" onclick="toggleSidebar(2)">Literature and art</button>
+    <button class="sidebar-button button-3" onclick="toggleSidebar(3)">Clothing</button>
+</div>
+
+<section class="hero">
+    <div class="hero-content" style="display: flex; align-content: space-around;">
+        
+    </div>
+</section>
+
+
+
+        <div class="container">
+            <div class="image-container">
+                <img src="/Kazakh-Khanate/public/images/main/kyz.png" alt="Kyz-Zhibek by Shaimardan Sariev">
+            </div>
+            <div class="info-container">
+                <h1>Kyz-Zhibek by Shaimardan Sariev</h1>
+                <p><strong>Title:</strong> Кыз-Жибек</p>
+                <p><strong>Artist:</strong> Шаймардан Сариев</p>
+                <p><strong>Year:</strong> 1984</p>
+                <p><strong>Medium:</strong> Oil on canvas</p>
+                <p class="dimensions"><strong>Dimensions:</strong> 101 x 131 cm</p>
+                <p>This painting represents a scene from the Kazakh epic "Kyz-Zhibek," showcasing traditional clothing, vibrant colors, and cultural elements of Kazakhstan.</p>
+            </div>
+        </div>
+        
+        <div class="reflection-container">
+            <h2>How do new generations relate to traditions?</h2>
+            <p>
+                New generations often engage with traditions in both innovative and reflective ways. While some choose to preserve them as a way of honoring their heritage, others reinterpret traditional practices through modern perspectives, blending cultural elements with contemporary art, fashion, and technology. 
+                For instance, younger artists and designers often revisit traditional motifs, like those in the epic *Kyz-Zhibek*, using them as inspiration to create works that resonate with a global audience while maintaining a deep connection to their roots. Additionally, traditions are kept alive through education, festivals, and storytelling, ensuring they remain a relevant part of evolving identities.
+            </p>
+        </div>
+
+
+
+<footer>
+    <p>&copy; 2024 Kazakh Khanate. All rights reserved.</p>
+    <div class="social-links">
+        <a href="/Kazakh-Khanate/index.html">Home</a>
+            <a href="./history.html">History</a>
+            <a href="./khans.html">Khans</a>
+            <a href="./culture.html">Culture</a>
+            <a href="./quiz.html">Quiz</a>
+    </div>
+</footer>
+<script>
+    function toggleSidebar(number) {
+        const sidebar = document.getElementById(`sidebar${number}`);
+        sidebar.classList.toggle('active');
+    }
+</script>
+</body>
+</html>

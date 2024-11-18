@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('/Kazakh-Khanate/src/fonts/CormorantGaramond-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFF0;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        width: 45%; /* Adjust for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .cards {
+        width: calc(100% - 40px); /* Accounts for padding/margins */
+        margin: 20px auto;
+    }
+
+    .cards-section {
+        background: #D2B48C;
+        margin-top: 200px;
+    }
+}
+/* Шапка */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(42, 42, 42);
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.header .logo {
+    font-size: 1.5em;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.nav-menu a {    
+    font-size: 1.25em;
+    margin: 0 15px;
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cards-section {
+    background: #D2B48C;
+    padding: 100px 0; /* Отступ сверху и снизу */
+}
+
+
+/* Основной контейнер для карточек */
+.main-sections {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; /* Центрирование карточек */
+}
+
+/* Карточка */
+.cards {
+    position: relative;
+    text-align: center;
+    min-width: 40%;
+    padding: 20px;
+    width: 22%;
+    color: white;
+    background-color: rgb(102, 114, 126);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.cards button {
+    background-color: #333; /* Dark gray */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.cards-c {
+    position: relative;
+    text-align: center;
+    min-width: 30%;
+    width: 22%;
+    color: white;
+    background-color: rgb(102, 114, 126);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.main-content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cards-c button {
+    width: 100%;
+    height: 50px;
+    font-size: 1.2em;
+    background-color: #414141;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+  /* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-color: #2b2b3d;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.7);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+}
+.sidebar h2 {
+    margin: 0;
+    padding: 20px;
+    background-color: #ffa726;
+    color: #000;
+}
+.sidebar button {
+    background: #444;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.sidebar button:hover {
+    background: #555;
+}
+
+  /* Sidebar Active State */
+.sidebar.active {
+    transform: translateY(0);
+}
+
+.quiz {
+    padding: 20px;
+}
+.question {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+.options {
+    list-style: none;
+    padding: 0;
+}
+.options li {
+    margin: 10px 0;
+}
+.options button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    background: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.options button:hover {
+    background: #555;
+}
+.correct {
+    background: #4caf50 !important;
+}
+.incorrect {
+    background: #f44336 !important;
+}
+.result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Kazakh-Khanate/src/styles/quiz.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Kazakh Khanate</div>
+        <nav class="nav-menu">
+          <a href="/Kazakh-Khanate/index.html">Home</a>
+          <a href="./history.html">History</a>
+          <a href="./khans.html">Khans</a>
+          <a href="./culture.html">Culture</a>
+          <a href="./quiz.html">Quiz</a>
+        </nav>
+    </header>
+    <br>
+    
+    <section class="cards-section">
+        <div class="main-sections">
+            <div class="cards">
+                <div class="cards-image" style="background-image: url('/Kazakh-Khanate/public/images/main/history.webp');"></div>
+                <h2>History test</h2>
+                <p>Test conatins of MCQ about the Kazakh Khanate and its historical significance.</p>
+                <button onclick="toggleSidebar(2)">Show Quiz</button>
+            </div>
+            <div class="cards">
+                <div class="cards-image" style="background-image: url('Kazakh-Khanate/public/images/main/khans.webp');"></div>
+                <h2>Khans test</h2>
+                <p>Test conatins of MCQ about major historical periods, including the founding and rise of the khanate.</p>
+                <button onclick="toggleSidebar(1)">Show Quiz</button>
+            </div>
+            <div class="cards">
+                <div class="cards-image" style="background-image: url('Kazakh-Khanate/public/images/main/culture.webp');"></div>
+                <h2>Culture and Traditions test</h2>
+                <p>Test conatins of MCQ about traditions, music, clothing, and food of the Kazakh people.</p>
+                <button onclick="toggleSidebar(0)">Show Quiz</button>
+            </div>
+        </div>
+        <!-- <div class="main-sections">
+            <div class="cards-c">
+                <button onclick="toggleSidebar(2)">Show Quiz</button>
+            </div>
+            <div class="cards-c">
+                <button onclick="toggleSidebar(1)">Show Quiz</button>
+            </div>
+            <div class="cards-c">
+                <button onclick="toggleSidebar(0)">Show Quiz</button>
+            </div>
+        </div> -->
+    </section>
+
+      
+    <!-- Sidebar 1: Quiz -->
+  <div class="sidebar" id="sidebar-0">
+    <h2>Culture and Traditions test</h2>
+    <button onclick="toggleSidebar(0)">Hide Sidebar</button>
+    <div class="quiz" id="quiz-container">
+      <!-- Question 1 -->
+      <div>
+        <p class="question">Who founded the Kazakh Writers’ Union in 1934?</p>
+        <ul class="options">
+          <li><button onclick="checkAnswer(this, true)">A) Saken Seifullin</button></li>
+          <li><button onclick="checkAnswer(this, false)">B) Magzhan Zhumabayev</button></li>
+          <li><button onclick="checkAnswer(this, false)">C) Zhusipbek Aimautov</button></li>
+          <li><button onclick="checkAnswer(this, false)">D) Sultanmakhmut Toraygyrov</button></li>
+        </ul>
+      </div>
+
+      <!-- Question 2 -->
+      <div>
+        <p class="question">What is the title of Saken Seifullin’s popular poem among Kazakh youth?</p>
+        <ul class="options">
+          <li><button onclick="checkAnswer(this, true)">A) “The Marseillaise of Kazakh Youth”</button></li>
+          <li><button onclick="checkAnswer(this, false)">B) “Freedom”</button></li>
+          <li><button onclick="checkAnswer(this, false)">C) “Kokshetau”</button></li>
+          <li><button onclick="checkAnswer(this, false)">D) “The Thorny Path, Dangerous Crossing”</button></li>
+        </ul>
+      </div>
+
+      <!-- Question 3 -->
+      <div>
+        <p class="question">Who authored the novel “Kartkozha”?</p>
+        <ul class="options">
+          <li><button onclick="checkAnswer(this, false)">A) Ilyas Zhansugurov</button></li>
+          <li><button onclick="checkAnswer(this, true)">B) Zhusipbek Aimautov</button></li>
+          <li><button onclick="checkAnswer(this, false)">C) Sabyrzhan Mukhanov</button></li>
+          <li><button onclick="checkAnswer(this, false)">D) Mukhtar Auezov</button></li>
+        </ul>
+      </div>
+
+      <!-- Question 4 -->
+      <div>
+        <p class="question">What was the first Kazakh sound film?</p>
+        <ul class="options">
+          <li><button onclick="checkAnswer(this, true)">A) “Amangeldy”</button></li>
+          <li><button onclick="checkAnswer(this, false)">B) “Kyz-Zhibek”</button></li>
+          <li><button onclick="checkAnswer(this, false)">C) “Enlik-Kebek”</button></li>
+          <li><button onclick="checkAnswer(this, false)">D) “Zhalbyr”</button></li>
+        </ul>
+      </div>
+
+      <!-- Question 5 -->
+      <div>
+        <p class="question">What theme is depicted in Saken Seifullin’s work “The Thorny Path, Dangerous Crossing”?</p>
+        <ul class="options">
+          <li><button onclick="checkAnswer(this, false)">A) The Kazakh steppe’s beauty</button></li>
+          <li><button onclick="checkAnswer(this, false)">B) Kazakh folklore</button></li>
+          <li><button onclick="checkAnswer(this, true)">C) The 1916 national liberation movement</button></li>
+          <li><button onclick="checkAnswer(this, false)">D) Kazakh musical culture</button></li>
+        </ul>
+      </div>
+
+      <!-- Question 6 -->
+      <div>
+        <p class="question">What was the first Kazakh sound film?</p>
+        <ul class="options">
+          <li><button onclick="checkAnswer(this, true)">A) “Amangeldy”</button></li>
+          <li><button onclick="checkAnswer(this, false)">B) “Kyz-Zhibek”</button></li>
+          <li><button onclick="checkAnswer(this, false)">C) “Enlik-Kebek”</button></li>
+          <li><button onclick="checkAnswer(this, false)">D) “Zhalbyr”</button></li>
+        </ul>
+      </div>
+
+      <!-- Question 7 -->
+      <div>
+        <p class="question">Who authored the opera “Aiman-Sholpan”?</p>
+        <ul class="options">
+          <li><button onclick="checkAnswer(this, false)">A) Gabit Musrepov</button></li>
+          <li><button onclick="checkAnswer(this, false)">B) Beimbet Mailin</button></li>
+          <li><button onclick="checkAnswer(this, false)">C) Akhmet Zhubanov</button></li>
+          <li><button onclick="checkAnswer(this, true)">D) Mukhtar Auezov</button></li>
+        </ul>
+      </div>
+
+      <!-- Question 8 -->
+      <div>
+        <p class="question">What was a significant contribution of Alexander Zatayevich to Kazakh culture?</p>
+        <ul class="options">
+          <li><button onclick="checkAnswer(this, false)">A) Establishing the Kurman-gazy Orchestra</button></li>
+          <li><button onclick="checkAnswer(this, false)">B) Documenting Kazakh folk songs</button></li>
+          <li><button onclick="checkAnswer(this, true)">C) Composing Kazakh opera</button></li>
+          <li><button onclick="checkAnswer(this, false)">D) Opening the first National Kazakh Theater</button></li>
+        </ul>
+      </div>
+
+      <!-- Question 9 -->
+      <div>
+        <p class="question">Who painted “The Surrounding Mountains of Lepsinsk”?</p>
+        <ul class="options">
+          <li><button onclick="checkAnswer(this, false)">A) N. Khlyudov</button></li>
+          <li><button onclick="checkAnswer(this, true)">B) V. Vereshchagin</button></li>
+          <li><button onclick="checkAnswer(this, false)">C) P. Kosharov</button></li>
+          <li><button onclick="checkAnswer(this, false)">D) O. Fedorchenko</button></li>
+        </ul>
+      </div>
+
+      <!-- Question 10 -->
+      <div>
+        <p class="question">What style of Kazakh ornamentation was commonly used in syrymak carpets?</p>
+        <ul class="options">
+          <li><button onclick="checkAnswer(this, false)">A) Geometric</button></li>
+          <li><button onclick="checkAnswer(this, false)">B) Plant-based</button></li>
+          <li><button onclick="checkAnswer(this, false)">C) Zoomorphic</button></li>
+          <li><button onclick="checkAnswer(this, true)">D) All of the above</button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidebar 2 -->
+  <div class="sidebar" id="sidebar-1">
+    <h2>Khans test</h2>
+    <button onclick="toggleSidebar(1)">Hide Sidebar</button>
+    <div class="quiz" id="quiz-container">
+        <div>
+            <p class="question">Who is considered the founder of the Kazakh Khanate?</p>
+            <ul class="options">
+              <li><button onclick="checkAnswer(this, false)">A) Janibek Khan</button></li>
+              <li><button onclick="checkAnswer(this, false)">B) Burynduk Khan</button></li>
+              <li><button onclick="checkAnswer(this, true)">C) Kerey Khan</button></li>
+              <li><button onclick="checkAnswer(this, false)">D) Kasym Khan</button></li>
+            </ul>
+          </div>
+    
+    <div>
+            <p class="question">Which Khan is credited with expanding the Kazakh Khanate's territories and strengthening its position in Central Asia?</p>
+            <ul class="options">
+              <li><button onclick="checkAnswer(this, false)">A) Mamash Khan</button></li>
+              <li><button onclick="checkAnswer(this, true)">B) Kasym Khan</button></li>
+              <li><button onclick="checkAnswer(this, false)">C) Tahir Khan</button></li>
+              <li><button onclick="checkAnswer(this, false)">D) Buidash Khan</button></li>
+            </ul>
+          </div>
+    
+    <div>
+            <p class="question">What marked the reign of Tahir Khan?</p>
+            <ul class="options">
+              <li><button onclick="checkAnswer(this, false)">A) Internal stability and economic prosperity</button></li>
+              <li><button onclick="checkAnswer(this, false)">B) Military victories and territorial expansion</button></li>
+              <li><button onclick="checkAnswer(this, true)">C) Internal struggles, military failures, and lack of diplomatic skills</button></li>
+              <li><button onclick="checkAnswer(this, false)">D) Peaceful relations with neighboring khanates</button></li>
+            </ul>
+          </div>
+    
+    <div>
+            <p class="question">Who ruled the Kazakh Khanate during a period of internal conflict and was killed in the Battle of San-Tash?</p>
+            <ul class="options">
+              <li><button onclick="checkAnswer(this, true)">A) Togum Khan</button></li>
+              <li><button onclick="checkAnswer(this, false)">B) Akhmat Khan</button></li>
+              <li><button onclick="checkAnswer(this, false)">C) Khak-Nazar Khan</button></li>
+              <li><button onclick="checkAnswer(this, false)">D) Shigai Khan</button></li>
+            </ul>
+          </div>
+    
+    <div>
+            <p class="question">Which Khan revitalized the Kazakh Khanate after a period of internal conflict and marked an era of both internal stability and external expansion?</p>
+            <ul class="options">
+              <li><button onclick="checkAnswer(this, false)">A) Shigai Khan</button></li>
+              <li><button onclick="checkAnswer(this, false)">B) Taukeel Khan</button></li>
+              <li><button onclick="checkAnswer(this, false)">C) Esim Khan</button></li>
+              <li><button onclick="checkAnswer(this, true)">D) Khak-Nazar Khan</button></li>
+            </ul>
+          </div>
+    
+    <div>
+            <p class="question">Who was the son of Shigai Khan and played a key role in strengthening the Kazakh Khanate amidst ongoing conflicts?</p>
+            <ul class="options">
+              <li><button onclick="checkAnswer(this, false)">A) Esim Khan</button></li>
+              <li><button onclick="checkAnswer(this, false)">B) Jangir Khan</button></li>
+              <li><button onclick="checkAnswer(this, true)">C) Taukeel Khan</button></li>
+              <li><button onclick="checkAnswer(this, false)">D) Batyr Khan</button></li>
+            </ul>
+          </div>
+    
+    <div>
+            <p class="question">Which Khan's reign is often referred to as the "Golden Age" of the Kazakh Khanate?</p>
+            <ul class="options">
+              <li><button onclick="checkAnswer(this, true)">A) Tauke Khan</button></li>
+              <li><button onclick="checkAnswer(this, false)">B) Kayyp Khan</button></li>
+              <li><button onclick="checkAnswer(this, false)">C) Bolat Khan</button></li>
+              <li><button onclick="checkAnswer(this, false)">D) Ablay Khan</button></li>
+            </ul>
+          </div>
+    
+    <div>
+            <p class="question">What event marked the beginning of the fragmentation of the Kazakh Khanate into three separate khanates?</p>
+            <ul class="options">
+              <li><button onclick="checkAnswer(this, true)">A) The reign of Bolat Khan</button></li>
+              <li><button onclick="checkAnswer(this, false)">B) The Battle of Ayaguz</button></li>
+              <li><button onclick="checkAnswer(this, false)">C) The Bashkir Uprising</button></li>
+              <li><button onclick="checkAnswer(this, false)">D) The rise of the Dzungar Khanate</button></li>
+            </ul>
+          </div>
+    
+    <div>
+            <p class="question">Who was the last Khan of the Kazakh Khanate and the leader of the national liberation movement against the Russian Empire?</p>
+            <ul class="options">
+              <li><button onclick="checkAnswer(this, false)">A) Ablay Khan</button></li>
+              <li><button onclick="checkAnswer(this, true)">B) Kenesary Kasymov</button></li>
+              <li><button onclick="checkAnswer(this, false)">C) Tauke Khan</button></li>
+              <li><button onclick="checkAnswer(this, false)">D) Kayyp Khan</button></li>
+            </ul>
+          </div>
+    
+    <div>
+            <p class="question">Which Khan is known for his leadership and military prowess, ruling from 1643 to 1652?</p>
+            <ul class="options">
+              <li><button onclick="checkAnswer(this, false)">A) Batyr Khan</button></li>
+              <li><button onclick="checkAnswer(this, true)">B) Jangir Khan</button></li>
+              <li><button onclick="checkAnswer(this, false)">C) Tauke Khan</button></li>
+              <li><button onclick="checkAnswer(this, false)">D) Kayyp Khan</button></li>
+            </ul>
+          </div>
+    </div>
+  </div>
+
+  <!-- Sidebar 3 -->
+  <div class="sidebar" id="sidebar-2">
+    <h2>History test</h2>
+    <button onclick="toggleSidebar(2)">Hide Sidebar</button>
+    <div class="quiz" id="quiz-container"></div>
+    <div>
+        <p class="question">When was the Kazakh Khanate founded?</p>
+        <ul class="options">
+          <li><button onclick="checkAnswer(this, true)">A) 1456</button></li>
+          <li><button onclick="checkAnswer(this, false)">B) 1450</button></li>
+          <li><button onclick="checkAnswer(this, false)">C) 1400</button></li>
+          <li><button onclick="checkAnswer(this, false)">D) 1500</button></li>
+        </ul>
+      </div>
+
+<div>
+        <p class="question">Who is considered the first Khan of the Kazakh Khanate?</p>
+        <ul class="options">
+          <li><button onclick="checkAnswer(this, false)">A) Abulkhair Khan</button></li>
+          <li><button onclick="checkAnswer(this, false)">B) Tokhtamysh Khan</button></li>
+          <li><button onclick="checkAnswer(this, true)">C) Janibek Khan</button></li>
+          <li><button onclick="checkAnswer(this, false)">D) Khazret Sultan</button></li>
+        </ul>
+      </div>
+
+<div>
+        <p class="question">Which empire did the Kazakh Khanate have conflicts with in the 16th century?</p>
+        <ul class="options">
+          <li><button onclick="checkAnswer(this, false)">A) Ottoman Empire</button></li>
+          <li><button onclick="checkAnswer(this, true)">B) Safavid Empire</button></li>
+          <li><button onclick="checkAnswer(this, false)">C) Russian Empire</button></li>
+          <li><button onclick="checkAnswer(this, false)">D) Mughal Empire</button></li>
+        </ul>
+      </div>
+
+<div>
+        <p class="question">What was the main religion practiced by the majority of the Kazakhs during the Khanate period?</p>
+        <ul class="options">
+          <li><button onclick="checkAnswer(this, false)">A) Buddhism</button></li>
+          <li><button onclick="checkAnswer(this, false)">B) Christianity</button></li>
+          <li><button onclick="checkAnswer(this, true)">C) Islam</button></li>
+          <li><button onclick="checkAnswer(this, false)">D) Zoroastrianism</button></li>
+        </ul>
+      </div>
+
+<div>
+        <p class="question">Which of the following was a major city of the Kazakh Khanate?</p>
+        <ul class="options">
+          <li><button onclick="checkAnswer(this, false)">A) Tashkent</button></li>
+          <li><button onclick="checkAnswer(this, true)">B) Turkestan</button></li>
+          <li><button onclick="checkAnswer(this, false)">C) Samarkand</button></li>
+          <li><button onclick="checkAnswer(this, false)">D) Bukhara</button></li>
+        </ul>
+      </div>
+
+<div>
+        <p class="question">Which khan led the Kazakh Khanate during its golden age in the 16th century?</p>
+        <ul class="options">
+          <li><button onclick="checkAnswer(this, false)">A) Zhanibek Khan</button></li>
+          <li><button onclick="checkAnswer(this, false)">B) Kerei Khan</button></li>
+          <li><button onclick="checkAnswer(this, true)">C) Tauekel Khan</button></li>
+          <li><button onclick="checkAnswer(this, false)">D) Yermak Timofeyevich</button></li>
+        </ul>
+      </div>
+
+<div>
+        <p class="question">The Kazakh Khanate was formed as a result of the division of which larger state?</p>
+        <ul class="options">
+          <li><button onclick="checkAnswer(this, false)">A) Timurid Empire</button></li>
+          <li><button onclick="checkAnswer(this, true)">B) Golden Horde</button></li>
+          <li><button onclick="checkAnswer(this, false)">C) Mongol Empire</button></li>
+          <li><button onclick="checkAnswer(this, false)">D) Safavid Empire</button></li>
+        </ul>
+      </div>
+
+<div>
+        <p class="question">What was the primary source of economy for the Kazakh Khanate?</p>
+        <ul class="options">
+          <li><button onclick="checkAnswer(this, false)">A) Agriculture</button></li>
+          <li><button onclick="checkAnswer(this, false)">B) Trade</button></li>
+          <li><button onclick="checkAnswer(this, true)">C) Nomadic herding</button></li>
+          <li><button onclick="checkAnswer(this, false)">D) Mining</button></li>
+        </ul>
+      </div>
+
+<div>
+        <p class="question">Which of the following was a major rival of the Kazakh Khanate in the 17th century?</p>
+        <ul class="options">
+          <li><button onclick="checkAnswer(this, true)">A) The Russian Tsardom</button></li>
+          <li><button onclick="checkAnswer(this, false)">B) The Ottoman Empire</button></li>
+          <li><button onclick="checkAnswer(this, false)">C) The Uzbek Khanate</button></li>
+          <li><button onclick="checkAnswer(this, false)">D) The Qing Empire</button></li>
+        </ul>
+      </div>
+
+<div>
+        <p class="question">In which year did the Kazakh Khanate officially fall, marking the end of its sovereignty?</p>
+        <ul class="options">
+          <li><button onclick="checkAnswer(this, true)">A) 1731</button></li>
+          <li><button onclick="checkAnswer(this, false)">B) 1552</button></li>
+          <li><button onclick="checkAnswer(this, false)">C) 1652</button></li>
+          <li><button onclick="checkAnswer(this, false)">D) 1700</button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <script src="/Kazakh-Khanate/src/scripts/quiz.js">
+  </script>
+</body>
+</html>

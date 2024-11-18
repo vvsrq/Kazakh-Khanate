@@ -1,0 +1,277 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('/Kazakh-Khanate/src/fonts/CormorantGaramond-Regular.ttf') format('truetype');
+}
+
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+/* Шапка */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.header .logo {
+    font-size: 1.5em;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.nav-menu a {    
+    font-size: 1.25em;
+    margin: 0 15px;
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Главный блок */
+.hero {
+    padding-top: 80px;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    background: url('/Kazakh-Khanate/public/images/main/bc_main.jpg') center/cover no-repeat;
+    background-size: cover;
+}
+
+/* Контейнер с контентом */
+.hero-content {
+    position: relative;
+    text-align: center;
+    padding: 0 20px; /* Добавляем отступы для маленьких экранов */
+}
+
+/* Заголовок */
+.hero-title {
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.hero-title span {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Описание */
+.hero-description {
+    margin-top: 20px;
+    font-size: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Кнопка "Discover" */
+.discover-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: #00274d;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+/* Кнопка "Discover" при наведении */
+.discover-button:hover {
+    background-color: #ffcc00;
+}
+
+/* Секция карточек с серым фоном */
+.cards-section {
+    background-color: rgb(89, 96, 103);
+    padding: 60px 0; /* Отступ сверху и снизу */
+}
+
+/* Основной контейнер для карточек */
+.main-sections {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto; /* Центрирование карточек */
+}
+
+/* Карточка */
+.cards {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    width: 22%;
+    color: white;
+    background-color: rgb(102, 114, 126);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.cards:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Изображение в карточке */
+.cards-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* Заголовок карточки */
+.cards h2 {
+    font-size: 1.6em;
+    color: #ffd700;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Описание карточки */
+.cards p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #e0e0e0;
+    line-height: 1.4;
+}
+
+/* Кнопка "Discover" */
+.cards-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffca28;
+    color: #00274d;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Added margin for spacing */
+}
+
+.cards-button:hover {
+    background-color: #ffcc00;
+}
+
+/* Адаптивность - для маленьких экранов */
+@media (max-width: 768px) {
+    .cards {
+        width: 45%; /* Adjust for medium screens */
+    }
+
+    .header {
+        flex-direction: column; /* Stack logo and navigation on top of each other */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .nav-menu {
+        margin-top: 15px;
+
+        align-content: space-around;
+    }
+
+    .hero-content{
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2.2em; /* Make title smaller */
+    }
+
+    .hero p {
+        font-size: 1em; /* Make description smaller */
+    }
+}
+
+
+@media (max-width: 480px) {
+    .cards {
+        width: calc(100% - 40px); /* Accounts for padding/margins */
+        margin: 20px auto;
+    }
+
+
+    .hero h1 {
+        font-size: 1.8em; /* Smaller title for mobile */
+    }
+
+    .header .logo {
+        font-size: 1.2em;
+    }
+
+    .nav-menu {
+        font-size: 1em;
+        width: 80vw;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav-menu a {
+        margin: 10px 0;
+    }
+}
+
+
+
+/* Логотип в главном блоке */
+.hero-content {
+    position: relative;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3em;
+    text-align: left;
+    margin-right: 295px;
+    margin-top: 50px;
+}
+
+.hero-title span {
+    display: block;
+    text-transform: uppercase;
+}
+
+.hero-description {
+    display: flex;
+    margin-top: 260px;
+    margin-left: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+}
+
+footer .social-links a {
+    color: #ffd700;
+    margin: 0 10px;
+    text-decoration: none;
+}
